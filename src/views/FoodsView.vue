@@ -1,17 +1,18 @@
 <template>
-  <div class="home">
-    <NavbarPage/>
-    <h1>Home</h1>
-  </div>
+  <NavbarPage/>
+  <h2>Daftar Makanan</h2>
 </template>
 
 <script>
 import NavbarPage from '@/components/Navbar.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
+    name:'FoodsView',
+    components: {
     NavbarPage
   }
 }
 </script>
+
+<style>
+
+</style>
