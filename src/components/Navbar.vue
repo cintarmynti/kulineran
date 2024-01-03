@@ -25,9 +25,11 @@
           </ul>
           <ul class="navbar-nav ml-auto  mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link" to="/keranjang">Keranjang</router-link>
+              <router-link class="nav-link" to="/keranjang">Keranjang
+                <font-awesome-icon :icon="['fas', 'basket-shopping']" />
+                <span class="badge bg-success ml-3">0</span>
+              </router-link>
               <!-- explicit style -->
-              <font-awesome-icon :icon="['fas', 'basket-shopping']" />
             </li>
             
           </ul>

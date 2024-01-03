@@ -7,6 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 library.add(faBasketShopping);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import './assets/css/main.css'
 
 createApp(App)
 .component("font-awesome-icon", FontAwesomeIcon)
