@@ -5,3 +5,24 @@
 #app{
     font-family: 'Montserrat', sans-serif;
 }
+
+.btn-success{
+    background-color: #4EB883;
+    border: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+ 
+}
+
+.card-product{
+    border-radius: 15px;
+}
+
+.img-top{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
