@@ -27,7 +27,7 @@
             <router-link to="/keranjang" class="nav-link">
               Keranjang
               <font-awesome-icon :icon="['fas', 'basket-shopping']" class="mr-2 ml-2 mx-2"></font-awesome-icon>
-              <span class="badge bg-success mx-1">0</span>
+              <span class="badge bg-success mx-1">{{updateKeranjang ? updateKeranjang.length : jumlah_pesanans.length }}</span>
             </router-link>
           </li>
 
@@ -39,8 +39,25 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "NavbarPage",
+  data(){
+    return{
+      jumlah_pesanans: []
+    }
+  },
+  props: ['updateKeranjang'],
+  methods:{
+    setJumlah(data){
+      this.jumlah_pesanans = data
+    }
+  },
+  mounted(){
+    axios.get('http://localhost:3000/keranjangs')
+    .then((response) => this.setJumlah(response.data))
+    .catch((error) => console.log(error))
+  }
 };
 </script>
 

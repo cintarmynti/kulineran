@@ -9,10 +9,14 @@ library.add(faBasketShopping);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
-
 import './assets/css/main.css'
+import ToastPlugin from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
+
+
 
 createApp(App)
 .component("font-awesome-icon", FontAwesomeIcon)
 .use(router)
+.use(ToastPlugin)
 .mount('#app')
